@@ -86,3 +86,146 @@ a {
 .flex {
     display:flex;
 }
+/*/////////////////////////*/
+/*LoginPage*/
+/*/////////////////////////*/
+
+  /* Container for the entire page */
+  .container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  /* Left panel with the image and company name */
+  .left-panel {
+    background: url('../img/Screenshot\ 2024-06-17\ 131102.png') no-repeat center center;
+    background-size: cover;
+    width: 27%;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+  }
+  
+  .company-name {
+    color: #25a8e5;
+    font-weight: bold;
+    font-size: 3em;
+    position: absolute;
+    z-index: 10; /* higher values on top */
+    left: 410px;
+    padding: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .company-name .highlight {
+    color: #030301;
+    font-style: italic;
+  }
+  
+  /* Right panel with the login form and welcome message */
+  .right-panel {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(248, 248, 248, 0.9));
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+  
+  .welcome-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .welcome-container h1 {
+    font-size: 3em;
+    color: black;
+    margin-bottom: 0.5em;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff; /* Light background for input */
+  }
+  
+  .error-message-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  #error-message {
+    color: red;
+    font-size: 0.9em;
+  }
+  
+  .forgot-password {
+    display: block;
+    text-align: right;
+    color: #007BFF;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 1em;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between; /* Space between the buttons */
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .login-btn, .signup-btn {
+    flex: 1;
+    padding: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent; /* Remove default border */
+    font-size: 1em;
+  }
+  
+  .login-btn {
+    background-color: #007BFF;
+    color: white;
+    margin-right: 10px; /* Space between buttons */
+  }
+  
+  .signup-btn {
+    background-color: white;
+    color: #007BFF;
+    border-color: #007BFF; /* Blue border */
+    margin-left: 10px; /* Space between buttons */
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 50px;
+  }
+  
+  footer p {
+    color: #666;
+    font-size: 0.75em;
+  }
+  
