@@ -34,12 +34,16 @@ const ContactUs = () => {
         </div>
       </section>
 
-      <section className="brands">
+      <section className="brands-section">
+        <div className="partnership">
+          <h2>Partnership with</h2>
+        </div>
+        <div className="brands">
         <img src={require('../img/brands/Electronic-Arts-Logo.png')} alt="Brand 1" />
         <img src={require('../img/brands/LG-Symbol.png')} alt="Brand 2" />
         <img src={require('../img/brands/Sony-Logo-1957-1961.png')} alt="Brand 3" />
-        <img src={require('../img/brands/Sony-Logo-1957-1961.png')} alt="Brand 4" />
-
+        <img src={require('../img/brands/454152.webp')} alt="Brand 4" />
+        </div>
       </section>
 
       <footer>
