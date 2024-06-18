@@ -15,16 +15,16 @@ const ContactUs = () => {
 
       <section className="contact-info">
         <div className="contact-details">
-          <h2>Contact Information</h2>
-          <p><i className="fas fa-phone"></i> 81/252142</p>
-          <p><i className="fas fa-envelope"></i> doryneh21@gmail.com</p>
-          <p><i className="fas fa-map-marker-alt"></i> Address: UAE, Dubai, Burj Khalifa</p>
-          <p><i className="fas fa-envelope"></i> Subscribe to our Newsletter</p>
+          <h2 className="typography-h2">Contact Information</h2>
+          <p className="typography-p"><i className="fas fa-phone"></i> 81/252142</p>
+          <p className="typography-p"><i className="fas fa-envelope"></i> doryneh21@gmail.com</p>
+          <p className="typography-p"><i className="fas fa-map-marker-alt"></i> Address: UAE, Dubai, Burj Khalifa</p>
+          <p className="typography-p"><i className="fas fa-envelope"></i> Subscribe to our Newsletter</p>
           <input type="email" placeholder="Email Address" />
           <button>Subscribe</button>
         </div>
         <div className="contact-form">
-          <h2>Leave a Message</h2>
+          <h2 className="typography-h2">Leave a Message</h2>
           <form>
             <input type="text" name="name" placeholder="Name" required />
             <input type="email" name="email" placeholder="Email" required />
@@ -36,13 +36,13 @@ const ContactUs = () => {
 
       <section className="brands-section">
         <div className="partnership">
-          <h2>Partnership with</h2>
+          <h2 className="typography-h2">Partnership with</h2>
         </div>
         <div className="brands">
-        <img src={require('../img/brands/Electronic-Arts-Logo.png')} alt="Brand 1" />
-        <img src={require('../img/brands/LG-Symbol.png')} alt="Brand 2" />
-        <img src={require('../img/brands/Sony-Logo-1957-1961.png')} alt="Brand 3" />
-        <img src={require('../img/brands/454152.webp')} alt="Brand 4" />
+          <img src={require('../img/brands/Electronic-Arts-Logo.png')} alt="Brand 1" />
+          <img src={require('../img/brands/LG-Symbol.png')} alt="Brand 2" />
+          <img src={require('../img/brands/Sony-Logo-1957-1961.png')} alt="Brand 3" />
+          <img src={require('../img/brands/454152.webp')} alt="Brand 4" />
         </div>
       </section>
 
@@ -51,8 +51,8 @@ const ContactUs = () => {
           SHOP<span className="highlight">nest</span>
           <i className="fas fa-check-circle check-icon"></i>
         </div>
-        <p>© 2024 Shopnest. All rights reserved.</p>
-        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a>
+        <p className="typography-p">© 2024 Shopnest. All rights reserved.</p>
+        <a className="typography-a" href="#">Privacy Policy</a> | <a className="typography-a" href="#">Terms of Service</a> | <a className="typography-a" href="#">Contact Us</a>
       </footer>
     </div>
   );
