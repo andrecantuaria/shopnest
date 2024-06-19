@@ -222,7 +222,6 @@ footer {
 footer p {
     color: #666;
     font-size: 0.75em;
-<<<<<<< HEAD
   }
   
   /* Product detail page and components */
@@ -349,7 +348,6 @@ img{
 .counter{
     margin-top: 15px;
     display: flex;
-=======
 }
 /*/////////////////////////*/
 /* CONACT US PAGE -BACHAR */
@@ -507,5 +505,4 @@ img{
 .typography-a {
     font-size: 0.9rem;
     text-decoration: none;
->>>>>>> 7e04d4427ce7b1a34f04b363a4c854ce6ce86d29
 }
