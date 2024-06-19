@@ -1,12 +1,12 @@
 import React from 'react';
-import LoginPage from './pages/LoginPage';
 import './css/index.css';
+import ProductDetail from './pages/ProductDetail';
 
 function App() {
   return (
     <main>
       <div className="container">
-      <LoginPage />
+      <ProductDetail/>
       </div>
     </main>
   );
