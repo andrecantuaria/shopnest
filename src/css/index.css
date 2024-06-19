@@ -219,8 +219,6 @@ footer p {
 /* CONACT US PAGE -BACHAR */
 /************************/
 .contact-us {
-    text-align: center;
-    color: #212029;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -253,18 +251,18 @@ footer p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
- .contact-form h2 {
+.contact-form h2 {
     margin-bottom: 60px;
     font-size: 3rem;
     margin-top: 10px;
-    padding-top: 15PX;
+    padding-top: 15px;
 }
-.contact-details h2{
-  margin-bottom: 5px;
-  font-size: 3rem;
-  margin-top: 10px;
-  padding-top: 15PX;
 
+.contact-details h2 {
+    margin-bottom: 5px;
+    font-size: 3rem;
+    margin-top: 10px;
+    padding-top: 15px;
 }
 
 .contact-details p {
@@ -323,7 +321,7 @@ footer p {
 }
 
 .partnership h2 {
-    font-size: 2.8rem; 
+    font-size: 2.8rem;
     color: #000000;
     margin-bottom: 10px;
 }
@@ -350,47 +348,6 @@ footer p {
     height: auto;
 }
 
-footer {
-    background-color: #212029;
-    color: white;
-    padding: 40px 0;
-    text-align: center;
-    font-size: 1.2rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    flex-shrink: 0;
-}
-
-footer p {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-}
-
-footer a {
-    color: #007BFF;
-    font-size: 1.2rem;
-}
-
-.footer-brand {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.footer-brand .highlight {
-    font-style: italic;
-    color: #007BFF;
-}
-
-.footer-brand .check-icon {
-    color: #007BFF;
-    font-size: 1.5rem;
-    margin-left: 10px;
-}
 
 .typography-h1 {
     font-size: 2.5rem;
