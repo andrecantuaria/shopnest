@@ -1,14 +1,20 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
+import ContactUs from './pages/ContactUs';
 import './css/index.css';
 import ProductDetail from './pages/ProductDetail';
 
 function App() {
   return (
-    <main>
-      <div className="container">
-      <ProductDetail/>
-      </div>
-    </main>
+    <Router>
+      <main>
+        <Routes>
+          <Route exact path="/" element={<LoginPage />} />
+          <Route path="/contact" element={<ContactUs />} />
+        </Routes>
+      </main>
+    </Router>
   );
 }
 
