@@ -18,7 +18,7 @@ function MainHeader() {
               <ul>
                   <li><Link to='/about'>About</Link></li>
                   <li><Link to='/products'>Buy now</Link></li>
-                  <li><Link to='/seelitem'>Seel Item</Link></li>
+                  <li><Link to='/sellitem'>Sell Item</Link></li>
                   <li><Link to='/contact'>Contact</Link></li>
               </ul>
           </nav>
@@ -26,7 +26,7 @@ function MainHeader() {
           <div className="nav-icons">
             <Link to='/'><i className="fa-solid fa-cart-shopping mr-2"></i></Link>
             <Link to='/'><i className="fa-solid fa-bell mr-2"></i></Link>
-            <Link to='/'><i className="fa-solid fa-user"></i></Link>
+            <Link to='/LoginPage'><i className="fa-solid fa-user"></i></Link>
           </div>
 
         </div>

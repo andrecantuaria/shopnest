@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import api from '../components/Api';
+import Counter from "../components/Counter.js";
+import ImageGallery from '../components/ImageGallery.js'
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -24,17 +26,23 @@ const ProductDetails = () => {
   }
 
   return (
-    <div className="container flexbox mt-3">
+    <div className="container flexbox mt-3 mb-3">
 
-      <div className="product-details">
-        <img src={product.image} alt={product.title} />
-        <div className="product-details-content">
-          <h1>{product.title}</h1>
-          <p>{product.description}</p>
-          <p className="price">${product.price} CAD</p>
-          <button className="primary-btn">Add to Cart</button>
-        </div>
-      </div>
+      <section className='flex-center prod-detail-section'>
+              <div className='product-images'>
+                  <ImageGallery image={product.image}/>
+              </div>
+              <div className='product-desc'>
+                  <p className="prod-price">{`$ ${product.price} CAD`}</p>
+                  <h2 className="prod-title">{product.title}</h2>
+                  <p className="prod-desc title" >Description </p>
+                  <p className="prod-desc">{product.description}</p>
+                  <div className="add-to-cart-section">
+                    <Counter/>
+                    <button className="add-to-cart"><i class="fa-solid fa-cart-shopping"/>Add to cart</button>
+                  </div>
+              </div>
+          </section>
 
 
     </div>
