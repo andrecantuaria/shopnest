@@ -1,4 +1,4 @@
-@charset "utf=8";
+@charset "utf-8";
 @import url('reset.css');
 
 :root {
@@ -8,14 +8,13 @@
     --off-white: #f6f6f6;
 }
 
-
 * {
     margin: 0;
     padding: 0;
     outline: none;
     border-style: none;
     vertical-align: baseline;
-    font-family:inherit;
+    font-family: inherit;
 }
 
 html {
@@ -44,26 +43,7 @@ body {
 .mr-3 { margin-right: 30px; }
 
 h1, h2, h3, p, a {
-    color: var(--off-white);
-}
-
-h1 {
-    font-size: 2.5rem; 
-    font-weight: 600; 
-}
-
-h2 {
-    font-size: 1.3rem;
-    font-weight: 600; 
-}
-
-h3 {
-    font-size: 1rem;
-    font-weight: 600; 
-}
-
-p, a {
-    font-size: 0.9rem;
+    color: var(--dark-gray);
 }
 
 a {
@@ -73,6 +53,9 @@ a {
 .container {
     width: min(100% - 30px, 1080px);
     margin-inline: auto;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
 }
 
 .center {
@@ -92,6 +75,14 @@ a {
   
   /* Left panel with the image and company name */
   .left-panel {
+    display: flex;
+}
+
+
+/*/////////////////////////*/
+/* LOH IN PAGE -BACHAR */
+/************************/
+.left-panel {
     background: url('../img/Screenshot\ 2024-06-17\ 131102.png') no-repeat center center;
     background-size: cover;
     width: 27%;
@@ -99,27 +90,38 @@ a {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1); /* Light shadow effect */
-  }
-  
-  .company-name {
+    box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.company-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    padding: 40px;
+}
+
+.company-name {
     color: #25a8e5;
     font-weight: bold;
     font-size: 3em;
-    position: absolute;
-    z-index: 10; /* higher values on top */
-    left: 410px;
-    padding: 40px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .company-name .highlight {
+}
+
+.company-name .highlight {
     color: #030301;
     font-style: italic;
-  }
-  
-  /* Right panel with the login form and welcome message */
-  .right-panel {
+}
+
+.check-icon {
+    color: #25a8e5;
+    font-size: 2em;
+    margin-left: 10px;
+}
+
+.right-panel {
     background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(248, 248, 248, 0.9));
     width: 65%;
     display: flex;
@@ -130,96 +132,97 @@ a {
     height: 100vh;
     padding: 0 5%;
     box-sizing: border-box;
-  }
-  
-  .welcome-container {
+}
+
+.welcome-container {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
     text-align: center;
-  }
-  
-  .welcome-container h1 {
+}
+
+.welcome-container h1 {
     font-size: 3em;
     color: black;
     margin-bottom: 0.5em;
-  }
-  
-  .input-group {
+}
+
+.input-group {
     margin-bottom: 15px;
-  }
-  
-  .input-group input {
+}
+
+.input-group input {
     width: 100%;
     padding: 15px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #fff; /* Light background for input */
-  }
-  
-  .error-message-container {
+    background-color: #fff;
+}
+
+.error-message-container {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-  }
-  
-  #error-message {
+}
+
+#error-message {
     color: red;
     font-size: 0.9em;
-  }
-  
-  .forgot-password {
+}
+
+.forgot-password {
     display: block;
     text-align: right;
     color: #007BFF;
     margin-bottom: 10px;
     text-decoration: none;
     font-size: 1em;
-  }
-  
-  .buttons {
+}
+
+.buttons {
     display: flex;
-    justify-content: space-between; /* Space between the buttons */
+    justify-content: space-between;
     margin-top: 20px;
     width: 100%;
-  }
-  
-  .login-btn, .signup-btn {
+}
+
+.login-btn, .signup-btn {
     flex: 1;
     padding: 15px;
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
-    border: 1px solid transparent; /* Remove default border */
+    border: 1px solid transparent;
     font-size: 1em;
-  }
-  
-  .login-btn {
+}
+
+.login-btn {
     background-color: #007BFF;
     color: white;
-    margin-right: 10px; /* Space between buttons */
-  }
-  
-  .signup-btn {
+    margin-right: 10px;
+}
+
+.signup-btn {
     background-color: white;
     color: #007BFF;
-    border-color: #007BFF; /* Blue border */
-    margin-left: 10px; /* Space between buttons */
-  }
-  
-  footer {
+    border-color: #007BFF;
+    margin-left: 10px;
+}
+
+footer {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     text-align: center;
     padding: 20px 50px;
-  }
-  
-  footer p {
+}
+
+footer p {
     color: #666;
     font-size: 0.75em;
+<<<<<<< HEAD
   }
   
   /* Product detail page and components */
@@ -346,4 +349,163 @@ img{
 .counter{
     margin-top: 15px;
     display: flex;
+=======
+}
+/*/////////////////////////*/
+/* CONACT US PAGE -BACHAR */
+/************************/
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contact-header {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 30px;
+}
+
+.contact-map {
+    width: 96%;
+    height: 100%;
+    border: none;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    height: 450px;
+}
+
+.contact-details, .contact-form {
+    width: 45%;
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 60px;
+    font-size: 3rem;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+.contact-details h2 {
+    margin-bottom: 5px;
+    font-size: 3rem;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+    font-size: 1.7rem;
+    text-align: left;
+    margin-left: 280px;
+}
+
+.contact-details input {
+    width: calc(100% - 150px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.contact-details button {
+    padding: 22px 25px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: calc(100% - 150px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.7rem;
+}
+
+.contact-form button {
+    padding: 22px 25px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.partnership {
+    margin: 20px 0;
+}
+
+.partnership h2 {
+    font-size: 2.8rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.brands-section {
+    background-color: #f6f6f6;
+    padding: 30px 0;
+    margin: 37px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(207, 197, 197, 0.1);
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0;
+    background-color: #daebf3;
+    box-shadow: 0px 4px 6px rgba(223, 240, 250, 0.1);
+}
+
+.brands img {
+    width: 150px;
+    height: auto;
+}
+
+
+.typography-h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.typography-h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.typography-h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.typography-p {
+    font-size: 0.9rem;
+}
+
+.typography-a {
+    font-size: 0.9rem;
+    text-decoration: none;
+>>>>>>> 7e04d4427ce7b1a34f04b363a4c854ce6ce86d29
 }
