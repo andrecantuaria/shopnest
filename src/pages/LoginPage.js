@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/index.css';
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
 
 const LoginPage = () => {
   const [email, setEmail] = useState('');
@@ -20,18 +19,13 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container mt-3 mb-3">
       <div className="left-panel">
-        <div className="company-logo">
-          <div className="company-name">
-            SHOP<span className="highlight">nest</span>
-          </div>
-          <i className="fas fa-check-circle check-icon"></i>
-        </div>
+        
       </div>
       <div className="right-panel">
         <div className="welcome-container">
-          <h1>Welcome</h1>
+          <h1>Welcome to Shopnest</h1>
           <form onSubmit={handleLogin}>
             <div className="input-group">
               <input
@@ -58,13 +52,9 @@ const LoginPage = () => {
               <button type="button" className="signup-btn">Sign up</button>
             </div>
           </form>
-          <p className="mt-2">
-            <Link to="/contact">Contact Us</Link>
-          </p>
+          
         </div>
-        <footer>
-          <p>© 2024 Shopnest. All rights reserved.</p>
-        </footer>
+      
       </div>
     </div>
   );
