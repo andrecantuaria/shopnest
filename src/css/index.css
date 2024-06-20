@@ -879,11 +879,14 @@ img {
     flex-direction: column;
     min-height: 100vh;
     width: 100%;
+    margin-bottom: -26rem;
+
 }
 
 .contact-header {
     width: 100%;
     height: 500px;
+    margin-bottom: 70px;
 }
 
 .contact-map {
@@ -907,6 +910,7 @@ img {
     border-radius: 10px;
     border: 1px solid var(--light-gray);
     box-sizing: border-box;
+    margin-bottom: 10px;
 }
 
 .contact-details {
@@ -933,18 +937,32 @@ img {
 }
 
 .contact-details p, .contact-details .subscribe-container p {
-    margin-bottom: 10px; 
-    font-size: 1.5rem; 
+    margin-bottom: 20px;
     text-align: left; 
+    font-size: 1.5rem; 
+
+}
+.Subscribe-biggerfont {
+    font-size: 2rem;
+    font-weight: bold; 
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.Subscribe-biggerfont i {
+    font-size: 2.5rem; 
+    color: rgb(83, 56, 56); 
 }
 
 .contact-details .subscribe-container {
-    margin-bottom: 20px;
+   /* margin-bottom: 20px;*/
+    margin-top: 20px;
+
+
+
 }
 
-.subscribe-input {
-    display: flex; 
-}
 
 .contact-details input, .contact-form input, .contact-form textarea {
     width: 100%; 
@@ -954,11 +972,17 @@ img {
     border-radius: 5px;
     font-size: 1.5rem;
 }
+.subscribe-input{
+    flex: 1;
+    display: block; /* Ensure the button is block-level */
+    padding-bottom: 1.5rem;
 
+}
 .contact-form textarea {
     height: 150px;
 }
-.contact-details button, .contact-form button {
+
+ .contact-form button {
     padding: 12px 30px; 
     border: none;
     background-color: var(--dark-gray);
@@ -969,7 +993,30 @@ img {
     display: inline-block; 
     width: fit-content;
     height: 40px;
+    display: block; /* Use flex to align icon and text */
+    margin-top: -5px;
+    margin-bottom: 5px;
+
+
+
     
+}
+.contact-details button{
+    padding: 12px 30px; 
+    border: none;
+    background-color: var(--dark-gray);
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: inline-block; 
+    width: fit-content;
+    height: 40px;
+    display: block; /* Use flex to align icon and text */
+    margin-top: 7px;
+    margin-bottom: -8px;
+
+
 }
 
 .contact-details button:hover, .contact-form button:hover {
@@ -1032,7 +1079,9 @@ img {
     font-size: 0.9rem;
     text-decoration: none;
 }
-
+.Subscribe-biggerfont p{
+    font-size: 1.9rem; /* Adjust the font size as needed */
+}
 
 
 
