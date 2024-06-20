@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/index.css';
-
+import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
 
 const ContactUs = () => {
     return (
@@ -15,31 +15,31 @@ const ContactUs = () => {
             </section>
 
             <div className="container">
-            <section className="contact-details">
-    <h2 className="typography-h2">Contact Information</h2>
-    <p className="typography-p"><i className="fas fa-phone"></i> 81/252142</p>
-    <p className="typography-p"><i className="fas fa-envelope"></i> doryneh21@gmail.com</p>
-    <p className="typography-p"><i className="fas fa-map-marker-alt"></i> Address: UAE, Dubai, Burj Khalifa</p>
-    <div className="subscribe-container">
-        <p className="typography-p"><i className="fas fa-envelope"></i> Subscribe to our Newsletter</p>
-        <div className="subscribe-input">
-            <input type="email" placeholder="Email Address" />
-            <button className="ml-1">Subscribe</button>
-        </div>
-    </div>
-</section>
+                <section className="contact-details">
+                    <h2 className="typography-h2">Contact Information</h2>
+                    <p className="typography-p"><i className="fas fa-phone"></i> 81/252142</p>
+                    <p className="typography-p"><i class="fa-solid fa-fax"></i> 204-555-555</p>
+                    <p className="typography-p"><i className="fas fa-envelope"></i> doryneh21@gmail.com</p>
+                    <p className="typography-p"><i className="fas fa-map-marker-alt"></i> Address: UAE, Dubai, Burj Khalifa</p>
+                    <div className="subscribe-container">
+                        <p className="Subscribe-biggerfont"><i class="fa-solid fa-envelope-open-text"></i> Subscribe to our Newsletter</p>
+                        <div className="subscribe-input">
+                            <input type="email" placeholder="Email Address" />
+                            <button className="ml-1">Subscribe</button>
+                        </div>
+                    </div>
+                </section>
 
-<section className="contact-form">
-    <h2 className="typography-h2">Leave a Message</h2>
-    <form>
-        <input type="text" name="name" placeholder="Name" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <textarea name="message" placeholder="Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+                <section className="contact-form">
+                    <h2 className="typography-h2">Leave a Message</h2>
+                    <form>
+                        <input type="text" name="name" placeholder="Name" required />
+                        <input type="email" name="email" placeholder="Email" required />
+                        <textarea name="message" placeholder="Message" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </section>
             </div>
-
         </div>
     );
 };
