@@ -6,11 +6,10 @@ const ContactUs = () => {
     return (
         <div className="contact-us mb-3">
             <section className="contact-header mb-3">
-                <iframe
+                <iframe 
                     title="Google Maps"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5148.930321780636!2d-97.1901954423122!3d49.81492197159653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea756d679c1f21%3A0xd09825e5197c16da!2sManitoba%20Institute%20of%20Trades%20and%20Technology!5e0!3m2!1sar!2sca!4v1718847010365!5m2!1sar!2sca"
-                    className="contact-map"
-                    style={{ width: '100%', height: '500px', border: '0' }}
+                    className="contact-map container"
                 ></iframe>
             </section>
 

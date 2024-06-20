@@ -9,7 +9,7 @@ const Products = () => {
     const fetchProducts = async () => {
       try {
         const response = await api.get('/products');
-        setProducts(response.data.slice(0, 30));
+        setProducts(response.data.sort(() => Math.random() - 0.5).slice(0, 30));
       } catch (error) {
         console.error('Error fetching products:', error);
       }
@@ -33,8 +33,8 @@ const Products = () => {
         </div>
         <div className="product-grid">
         {products.map((product) => (
-              <div className="product-item" key={product.id}>
-                <Link to={`/productdetails/${product.id}`}>
+              <div className="product-item" key={product.productId}>
+                <Link to={`/products/${product.productId}`}>
                   <div className="product-image-container">
                     <img className="product-image" src={product.image} alt={product.title} />
                   </div>

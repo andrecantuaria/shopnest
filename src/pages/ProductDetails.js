@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import api from '../components/Api';
 import Counter from "../components/Counter.js";
 import ImageGallery from '../components/ImageGallery.js'
+import Featured from '../components/Featured.js';
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -26,8 +27,8 @@ const ProductDetails = () => {
   }
 
   return (
+    <>    
     <div className="container flexbox mt-3 mb-3">
-
       <section className='flex-center prod-detail-section'>
               <div className='product-images'>
                   <ImageGallery image={product.image}/>
@@ -43,10 +44,10 @@ const ProductDetails = () => {
                   </div>
               </div>
           </section>
-
-
     </div>
-   
+    <Featured text={"See Also"}/>
+    </>
+
   );
 };
 

@@ -195,7 +195,7 @@ nav a {
     width: 850px; 
     height: 850px; 
     border-radius: 50%;
-    background-image: url("../imgs/iphone.jpg");
+    background-image: url("../img/iphone.jpg");
     background-size: cover; 
     background-position: bottom; 
     z-index: 0;
@@ -265,6 +265,7 @@ nav a {
     background-color: var(--white);
     display: flex;
     flex-direction: column;
+    height: 300px;
 }
 
 .product-item a {
@@ -744,7 +745,7 @@ nav a {
     background-color: white;
     width: 60%;
     margin-right: 20px;
-    height: 100%; /* Ajustado para 100% */
+    height: 410px; /* Ajustado para 100% */
     display: flex;
     flex-direction: column; /* Ajustado para coluna */
     border: 1px solid var(--light-gray);
@@ -785,7 +786,7 @@ figure {
     display: flex;
     justify-content: center;
     align-items: center; 
-    height: 100%;
+    height: 410px;
     width: 100%;
     padding: 20px;
 }
@@ -875,6 +876,7 @@ img {
 /* CONACT US PAGE -BACHAR */
 /************************/
 .contact-us {
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -886,16 +888,16 @@ img {
 .contact-header {
     width: 100%;
     height: 500px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 
 .contact-map {
-    width: 96%;
     height: 100%;
     border: none;
 }
 
 .contact-info {
+
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
@@ -915,9 +917,11 @@ img {
 
 .contact-details {
     margin-right: 10px; 
+    padding: 30px;
 }
 
 .contact-form {
+    padding: 30px;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
@@ -971,6 +975,7 @@ img {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1.5rem;
+    resize: none;
 }
 .subscribe-input{
     flex: 1;
@@ -1083,6 +1088,14 @@ img {
     font-size: 1.9rem; /* Adjust the font size as needed */
 }
 
+/* Not found page*/
 
+.not-found-img{
+    mix-blend-mode: multiply;
+}
+
+.not-found-section{
+    height: 550px;
+}
 
 

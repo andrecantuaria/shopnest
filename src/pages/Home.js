@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
     <Banner />
-    <Featured />
+    <Featured text={"New arrivals"} />
     <VideoSection />
     </>
     
